@@ -19,45 +19,44 @@
 
     <section>
       <h2 class="text-2xl font-bold">1. Idea Sourcing and Background</h2>
-      <p>This project was based on my Week 5 idea to do a deep dive into Wireshark and packet sniffing. My goal was to understand how cybersecurity professionals detect malicious traffic and build my own basic tools for analysis. I wanted to simulate threats and capture them using Wireshark, then analyze them using Python.</p>
+      <p>This project started from my Week 5 idea to do a deep dive into Wireshark and packet sniffing. I wanted to learn how to analyze network traffic and understand how cybersecurity professionals detect suspicious behavior in `.pcap` files. I focused on SYN flood attacks and port scanning patterns.</p>
     </section>
 
     <section>
       <h2 class="text-2xl font-bold">2. Project Overview and Goals</h2>
-      <p>This project simulates SYN floods and port scans, captures `.pcap` traffic using Wireshark, and processes it using PyShark scripts. It aims to teach network-level analysis, threat detection, and documentation/presentation of results through a GitHub site and demo video.</p>
+      <p>This project captures and analyzes network traffic to detect malicious activity using Wireshark and Python. My goals were to learn packet filtering, simulate network attacks safely, write scripts that flag abnormal behavior, and document my process clearly for presentation.</p>
     </section>
 
     <section>
       <h2 class="text-2xl font-bold">3. PRD Summary and Stretch Goals</h2>
       <ul class="list-disc pl-6">
-        <li>Use Wireshark to capture malicious patterns</li>
-        <li>Create scripts to detect threats from `.pcap` files</li>
-        <li>Simulate network scans using port scanner</li>
-        <li>Document the process, build a website, and record a walkthrough</li>
-        <li><strong>Stretch Goal:</strong> Real-time or batch analysis with Python</li>
+        <li>Capture packet data in a simulated attack using Wireshark</li>
+        <li>Use PyShark (Python) to detect anomalies in `.pcap` files</li>
+        <li>Create a website and demo video to explain everything</li>
+        <li><strong>Extension:</strong> Script that detects high volumes of SYN packets (possible DDoS)</li>
       </ul>
     </section>
 
     <section>
       <h2 class="text-2xl font-bold">4. Tools and Technologies Used</h2>
       <ul class="list-disc pl-6">
-        <li>Wireshark – Deep packet inspection</li>
+        <li>Wireshark – For packet sniffing and analysis</li>
         <li>PyShark – Python wrapper for TShark</li>
+        <li>Python – Scripting automation</li>
         <li>TShark – Command-line analysis</li>
-        <li>Python – Script building</li>
-        <li>Kali Linux – Simulated attack environment</li>
-        <li>GitHub – Project publishing</li>
-        <li>YouTube – Demo video hosting</li>
+        <li>Kali Linux – For simulating attacks (scans)</li>
+        <li>GitHub – For code sharing and website hosting</li>
+        <li>YouTube – For demo video</li>
       </ul>
     </section>
 
     <section>
       <h2 class="text-2xl font-bold">5. Project Implementation</h2>
       <ol class="list-decimal pl-6">
-        <li><strong>Packet Capture:</strong> Simulated scans using Kali Linux tools, captured traffic with Wireshark.</li>
-        <li><strong>Script Building:</strong> Developed Python scripts to parse and alert on `.pcap` traffic.</li>
-        <li><strong>Documentation:</strong> Screenshots, explanations, and filtered examples included in the report.</li>
-        <li><strong>Publishing:</strong> Built this website and recorded a YouTube demo.</li>
+        <li><strong>Simulation:</strong> Used Kali Linux tools to simulate a port scan and a SYN flood.</li>
+        <li><strong>Capture:</strong> Captured traffic with Wireshark and saved `.pcap` files.</li>
+        <li><strong>Analysis:</strong> Created Python scripts to scan for patterns in `.pcap` files.</li>
+        <li><strong>Presentation:</strong> Created this website and recorded a demo walkthrough.</li>
       </ol>
     </section>
 
@@ -97,26 +96,27 @@ for ip, count in syn_count.items():
 
     <section>
       <h2 class="text-2xl font-bold">7. Challenges and Reflection</h2>
-      <p>This was my first time using Wireshark and working with `.pcap` files. I found it very hard at first, but I learned a lot using ChatGPT and Claude AI. I now understand how SYN packets work and how a scanner or flood attack appears in packet logs. I also improved my coding, filtering, and documentation skills.</p>
+      <p>I was new to Wireshark, packet flags, and scripting with PyShark. At first, I found filters and TCP analysis difficult. I asked for help from ChatGPT and Claude AI to guide me through troubleshooting and understanding how to simulate traffic and detect attacks. In the end, I successfully created a working packet analysis tool and learned a lot about how real-world network defense works.</p>
     </section>
 
     <section>
       <h2 class="text-2xl font-bold">8. AI Assistance and Resources</h2>
       <ul class="list-disc pl-6">
-        <li><a href="https://chatgpt.com/share/684c395f-8930-8000-8777-a26b1e062803" class="text-blue-600 underline">ChatGPT Conversation</a></li>
-        <li><a href="https://claude.ai/share/281c7144-b1cd-4678-8baf-12284f804cde" class="text-blue-600 underline">Claude AI Support</a></li>
+        <li><a href="https://chatgpt.com/share/684c395f-8930-8000-8777-a26b1e062803" class="text-blue-600 underline">ChatGPT Conversation (Code + Concepts)</a></li>
+        <li><a href="https://claude.ai/share/281c7144-b1cd-4678-8baf-12284f804cde" class="text-blue-600 underline">Claude AI Help (Filters + PRD)</a></li>
+        <li><a href="https://youtu.be/qTaOZrDnMzQ?si=Bq7QtMnAme_3CMxR" class="text-blue-600 underline">Demo Video Link</a></li>
       </ul>
     </section>
 
     <section>
-      <h2 class="text-2xl font-bold">9. How I Ensured Full Marks</h2>
+      <h2 class="text-2xl font-bold">9. Checklist for Full Marks</h2>
       <ul class="list-disc pl-6">
-        <li>✔️ Submitted idea and project overview</li>
-        <li>✔️ Wrote and uploaded PRD</li>
-        <li>✔️ Completed extension (packet analyzer script)</li>
-        <li>✔️ Uploaded documentation + screenshots</li>
-        <li>✔️ Built a complete GitHub Pages site</li>
-        <li>✔️ Recorded and submitted a demo video</li>
+        <li>✔️ Submitted idea and got approval</li>
+        <li>✔️ Wrote PRD with stretch goals</li>
+        <li>✔️ Completed one extension (SYN flood detector)</li>
+        <li>✔️ Uploaded scripts and documentation</li>
+        <li>✔️ Built website and included all required parts</li>
+        <li>✔️ Embedded demo video and GitHub repo</li>
       </ul>
     </section>
 
@@ -136,7 +136,7 @@ for ip, count in syn_count.items():
   </main>
 
   <footer class="bg-blue-900 text-white text-center py-4 mt-10">
-    &copy; 2025 Sarju Kharel | Final Project – Wireshark Network Analysis
+    &copy; 2025 Sarju Kharel | Final Project – Wireshark Packet Sniffing
   </footer>
 
 </body>
